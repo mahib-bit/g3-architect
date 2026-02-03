@@ -14,6 +14,10 @@
 .text-gray{
   color: rgba(66, 66, 66, 1);
 }
+          /* light gray */
+.text-light-gray{
+  color: rgba(114, 114, 114, 1);
+}
            /* dark 03 */
 .text-dark{
   color: rgba(33, 33, 33, 1);
@@ -121,6 +125,45 @@ main> section{
   font-weight: 700;
   margin-bottom: 24px;
 }
+
+/* project styles */
+.projects{
+  gap: 140px;
+}
+.project img{
+  width: 100%;
+  height: auto;
+  border-radius: 8px;} 
+#project-title{
+  border-left: 5px solid #FF900E;
+  padding-left: 20px;
+}
+.project-card{
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06); 
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 30px;
+}
+.card-head{
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+#exp-badge{
+  padding: 45px 42px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  border-radius: 8px;
+  border: none;
+  margin-left: -92px;
+  margin-top: -77px;
+}
+#exp-year{
+  font-size: 4rem;
+  font-weight: 700;
+}
+.project-architect{
+  width: 100%;
+}
 /* fact styles */
 .fact-title{
   margin-left: 240px;
@@ -215,14 +258,26 @@ main> section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: -100px;
+    margin-top: -10px;
     margin-bottom: 50px;
   }
 .sponsor-logos{
     grid-template-columns:1fr;
     justify-items: center;
   }
+  .projects{
+  flex-direction: column;
+  }
+  #exp-badge{
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  .project-architect img{
+    width: 100%;
+    height: auto;
+  }
 }
+
 /* tablet responsive media query */
 @media screen and (min-width: 577px) and (max-width: 992px){
   .navbar,
@@ -245,7 +300,7 @@ main> section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: -150px;
+    margin-top: -15px;
     margin-bottom: 50px;
   }
   .fact-container{
@@ -256,5 +311,12 @@ main> section{
   .sponsor-logos{
     grid-template-columns: repeat(3,1fr);
     justify-items: center;
+  }
+  .projects{
+  flex-direction: column;
+  }
+  #exp-badge{
+    margin-left: 0px;
+    margin-top: 20px;
   }
 }
