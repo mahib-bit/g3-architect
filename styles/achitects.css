@@ -229,6 +229,15 @@ main> section{
 .sponsor-logos img{
   filter: grayscale(100%);
 }
+/* footer style */
+footer{
+  background-color: #FFF4E7;
+  max-width: 1440px;
+  margin: 240px auto;      
+  padding: 40px 80px;  
+  text-align: center;
+  border-radius: 8px;
+}
 
 /* mobile responsive media query */
 @media screen and (max-width: 576px){
@@ -276,6 +285,10 @@ main> section{
     width: 100%;
     height: auto;
   }
+  footer{ 
+  margin: 80px 16px;
+  padding: 40px 80px ;
+}
 }
 
 /* tablet responsive media query */
@@ -319,4 +332,7 @@ main> section{
     margin-left: 0px;
     margin-top: 20px;
   }
+  footer{ 
+  margin: 80px 16px;
+}
 }
